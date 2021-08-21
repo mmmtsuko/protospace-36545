@@ -1,5 +1,4 @@
 class ApplicationRecord < ActiveRecord::Base
-  validates :a, presence: true
-  validates :b, presence: true
-  validates :c, presence: true 
+  validates :email, presence: true
+  validates :encrypted_password, presence: true
 end
