@@ -1,4 +1,5 @@
 class ApplicationRecord < ActiveRecord::Base
-  
-  self.abstract_class = true
+  validates :a, presence: true
+  validates :b, presence: true
+  validates :c, presence: true 
 end
