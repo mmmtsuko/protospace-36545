@@ -22,8 +22,8 @@ Association
 |prototype |reference |         |
 
 Association
-.belongs_to :users
-.belongs_to :protypess
+.belongs_to :user
+.belongs_to :protype
 
 
 ## protptypesテーブル
@@ -37,5 +37,5 @@ Association
 
 
 .prototypes
-.belongs_to:users
+.belongs_to:user
 .has_many  :commets
