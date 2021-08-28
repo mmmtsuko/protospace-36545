@@ -9,7 +9,9 @@
 | profile      |text     |NOT NULL |
 | position     |text     |NOT NULL |
 
-# Usersテーブル→commintsテーブルとprtotypesテーブルに多く紐づく
+Association
+.has_many :commints
+.has_many :prototyes
 
 
 ## commentsテーブル
@@ -19,7 +21,10 @@
 |user      |reference |         |
 |prototype |reference |         |
 
-# commetsテーブル→usersテーブルとprotypesテーブルに一つだけ紐づく
+Association
+.belongs_to :user
+.belongs_to :protype
+
 
 ## protptypesテーブル
 |  Colum    |Type      |Option               |
@@ -30,4 +35,7 @@
 |image      |          |Active Storageで実装  |
 |user       |referense |                     |
 
-# prototypesテーブル→usersテーブルに一つだけ紐づく  commetsテーブルに多く紐づく
+
+.prototypes
+.belongs_to:user
+.has_many  :commets
