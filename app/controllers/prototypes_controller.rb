@@ -16,7 +16,7 @@ class PrototypesController < ApplicationController
     else
       render :new
     end
-  end
+  endpr
 
   def show
     @prototype = Prototype.find(params[:id])
